@@ -1,284 +1,144 @@
-.div{
-    background-image: url(shubam.png);
-    
-   border: 1px solid #ddd;
- 
-    margin-top: 70px;
-    margin-left: 12px;
-    margin-right: 12px;
-      background-size: 127px 97px;
-
-
-   
-}
-
-
-.fonts{
-font-family: sans-serif;
-}
-
-
-
-.backdiv{
-   background-color: transparent;
-}
-
-.kalu{
-    display: none;
-}
-
-@media screen and (min-width: 617px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-   .backdiv{
-    padding: 1em;
-    background: #F9F9F9;
-    margin-top: 35;
-    border: 1px solid #DDD;
-    margin-top: 3;
-    padding: 1em;
-    background: #F9F9F9;
-    
-    margin:9vw auto;
-    min-width: 67vw;
-    
-    margin-left: 9;
-
-
-}
-.footer{
-    min-width:100%;
-}
- 
-.footcont{
-width:100%
-    }
-
-.div{
-    margin-top: 0;
-}
-.kalu{
-    background-color: black;
-    width: 100%;
-    height:80vh;
-    display: block;
-}
-
-
-}
-
-*{
+html, body{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color:  #d9eeef;
-    font-family: "Merriweather", "Times New Roman", Times, serif;
-}
-
-header{
-    position: fixed;
-    height: 50px;
-    width: 100%;
+    font-size: 13px;
+    line-height: 1.57143;
+    color: #322828;
+    padding: 35px 15px 210px;
+    background-color: #d9eeef;
     display: flex;
     justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    background-color: white;
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 56px;
+    text-align: center;
     color: #01a2a6;
-    z-index: 100;
-
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 56px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0px 10px 0 rgba(67, 67, 69, 0.35);
 }
-
-.flex{
-    display: flex;
+.quick{
+    padding: 2em;
+    background-color: #F9F9F9;
+    margin-top: 35px;
+    border: 1px solid #DDD;
+    width: 666.4px;
 }
-
-.heding{
+hr{
+    margin-bottom: 2em;
+}
+table{
+    background-color: transparent;
+    border-spacing: 0;
+    background: url('https://dtcpass.delhi.gov.in/images/Dtc.jpeg');
+}
+.heading{
+    outline: solid 1px #DDD;
+}
+h5.text-center{
+    color:#01a2a6;
     font-size: 24px;
     line-height: 1.5;
     text-align: center;
-    
-    font-weight: bold;
-    color: #01a2a6;
+    padding: 8px;
 }
-
-.headingcont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    border-bottom: 1px solid #ddd;
-}
-
-.imegcont{
-    height: 215px;
-    width: 200px;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: auto;
-
-}
-
-.imeg{
-    width: 100%;
-    opacity: 65%;
-   
-}
-
-.Namecont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 20px;
-    
-}
-
-.type{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-text-align: center;
-    
-}
-
-b{
-    margin-bottom: 20px;
-}
-
-.blink{
-    text-transform: translate(-50,-50);
-}
-
-
-.tras{
-    animation:blink 2.5s linear infinite;
-    color: #2f8a12;
-    font-size: 25px;
-    font-weight: bolder;
-}
-/*
-@keyframes blink{
-    0%{opacity: 0;}
-    25%{opacity: .2;}
-    50%{opacity: .5;}
-    75%{opacity: 7;}
-    100%{opacity: 1;}
-   
-
-}
-*/
-@keyframes blink {
-    0% { opacity: 0; visibility: hidden; }
-    10% { opacity: 0.2; visibility: visible; }
-    20% { opacity: 0.5; }
-    30% { opacity: 0.7; }
-    40% { opacity: 0.9; }
-    50% { opacity: 1; }
-    60% { opacity: 0.9; }
-    70% { opacity: 0.7; }
-    80% { opacity: 0.5; }
-    90% { opacity: 0.2; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
-  }
-  
-.busno{
-    font-size: 25px;
-    font-weight: bolder;
-
-}
-
-.infocont{
-    justify-content: center ;
-    flex-direction: column;
-}
-
-.deadline{
-    font-size: 20px;
-    color: red;
+.details-td{
+    padding: 8px;
     text-align: center;
-
+    border: solid 1px #DDD;
+    border-top: none;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-.deadlinecont{
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 17px;
-
-
+.profile-image{
+    width: 250px;
+    height: 250px;
+    opacity: 65%;
 }
-.contqrsign{
-    width: 100%;
+.signature, .qr-code{
+    padding: 8px;
+    border: solid 1px #DDD;
 }
-
-
-.signcont{
-    display: flex;
-   
-   
-    width: 50%;
-    height: 97px;
+.signature{
+    text-align: left;
+    border-top: none;
+    border-right: none;
 }
-
-.signimg{
-    width: 80px;
+.qr-code{
+    border-top: none;
+    text-align: center;
+}
+.qr-code img{
     height: 80px;
-    padding: 8px;
+    width: 80px;
 }
-
-.qrcont{
-    display: flex;
-    justify-content: center;
+.name{
+    display: block;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+.name:nth-of-type(2){
+    margin-top: -15px !important;
+}
+.pass-number{
+    display: block;
+    margin-top: -30px !important;
+    font-size: 25px;
+}
+.validation{
+    display: block;
+    font-size: 20px;
+    margin-top: -25px;
+    color: red;
     
-    width: 50%;
-    align-items: center;
 }
-.qrimg{
-    padding: 8px;
-    width: 65px;
-    height: 65px;
-    
-
+#blink{
+    color: #2f8a12;
+    transition: 1.5s;
 }
-
-.footer{
+td{
+    line-height: 1.573;
+}
+footer{
     background-color: #01a2a6;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    font-size: 2vh;
-
-}
-
-.footcont{
-    margin-top: 10vh;
-}
-
-.fontwaght900{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.57143;
+    text-align: center;
+    padding: 90px 0 40px;
+    box-sizing: border-box;
+    margin: 0 0 11px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 900;
+    color: black;
 }
 
-.border{
-    border: 1px solid #ddd;
-}
-
-.busnoIdCont{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center ;
-    padding: 0 15px;
+@media(max-width: 765px){
+    .quick{
+        padding: 0;
+        width: 450px;
+    }
+    hr{
+        display: none;
+    }
 }
