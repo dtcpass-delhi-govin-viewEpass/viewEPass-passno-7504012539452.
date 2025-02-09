@@ -3,54 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="https://dtcpass.delhi.gov.in/images/DTC1.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="idea.css">
     <title>Home | e-Bus Pass</title>
+    <link rel="shortcut icon" href="https://dtcpass.delhi.gov.in/images/DTC1.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <section class="width">
-        <header>
-            <h3 class="color">E- bus pass</h3>
-        </header>
-    </section>
+    <nav>
+        E- Bus Pass
+    </nav>
+    <div class="quick">
+        <hr class="divider bg-madison hr-sm-left-0">
+        <div id="image">
+            <table class="table table-bordered" style="width:100%;border:10px;" background="images/Dtc.jpeg">
+                <tbody>
+                    <tr>
+                        <td class="heading" colspan="4">
+                            <h5 class="text-center"><u>DTC And Cluster Bus Pass</u></h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="details-td" colspan="4">
+                            <img class="profile-image" src="./image.jpg">
+                            <br>
+                            <label class="name"><b>VISHAL KUMAR</b></label><br>
+                            <label class="name"><b>Student All route AC/Non AC</b></label><br>
+                            <label class="pass-number"><b>Bus Pass No. </b><b id="blink" style="opacity: 0;">7504012523945</b></label><br>"
+                            <script type="text/javascript">
+                                var blink = document.getElementById('blink');
+                                setInterval(function () {
+                                    blink.style.opacity = (blink.style.opacity == 0 ? 2 : 0);
+                                }, 1000);
+                            </script>
+                             <label class="validation"> <b>Valid from <span id="date-start"></span> to <span id="date-end"></span></b></label>
+<!--                             <script>
+                                const currentDate = new Date();
+                                const endDate = new Date(currentDate);
+                                endDate.setMonth(endDate.getMonth() + 2);
+                                document.getElementById("date-start").textContent = `24/${currentDate.getMonth() + 1 <= 9 ? `0${currentDate.getMonth() + 1}` : currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
+                                document.getElementById("date-end").textContent = `23/${endDate.getMonth() + 1 <= 9 ? `0${endDate.getMonth() + 1}` : endDate.getMonth() + 1}/${endDate.getFullYear()}`;  
+                            </script> -->
+                            <script>
+                                const currentDate = new Date();
+                                const startDate = new Date(currentDate);
+                                // Set the start date to the same day of the previous month
+                                startDate.setMonth(startDate.getMonth() - 1);
+                                const endDate = new Date(startDate);
+                                // Add 2 months to the start date for the end date
+                                endDate.setMonth(endDate.getMonth() + 2);
+                                // Format the start and end dates with leading zeros
+                                document.getElementById("date-start").textContent = `24/${startDate.getMonth() + 1 <= 9 ? `0${startDate.getMonth() + 1}` : startDate.getMonth() + 1}/${startDate.getFullYear()}`;
+                                document.getElementById("date-end").textContent = `23/${endDate.getMonth() + 1 <= 9 ? `0${endDate.getMonth() + 1}` : endDate.getMonth() + 1}/${endDate.getFullYear()}`;
 
-    <div class="backdiv">
-
-        <div class="div ">
-            <div class="headingcont"><u class="heding">DTC And Cluster Bus Pass</u></div>
-
-            <div class="imegcont"><img src="van3.jpg" alt="" class="imeg"></div>
-            <div class="Namecont fonts"><b class="fonts">VISHAL KUMAR</b></div>
-            <div class="type"><b class="fonts">Student All route AC/Non AC</b></div>
-            <div class="flex infocont">
-                <div class="busnoIdCont">
-                    <div class="fonts"><b class="busno fonts">Bus Pass No. </b></div>
-                    <div class="blink fonts"><b id="blin" class="tras fonts">7502082345752</b></div>
-                </div> 
-
-                <div>
-                    <div class="deadlinecont flex "><b class="deadline fonts">Valid from 04/01/2025 to 03/04/2025</b></div>
-
-                    <div class="flex contqrsign">
-                        <div class="signcont border"><img src="sign.png" alt="" class="signimg"></div>
-                        <div class="flex qrcont border"><img src="new.png" alt="" class="qrimg"></div>
-                    </div>
-                </div>
-            </div>
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="signature" colspan="2">
+                            <img src="./sign.png" alt = ""
+                            height="80px" width="80px">
+                        </td>
+                        <td class="qr-code" colspan="2">
+                            <img src="./Screenshot 2023-09-03 142959.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-            <div class="footcont">
-                <footer class="footer">
-                    <b>Copyright © - Delhi e-Governance Society <b class="fontwaght900">2024</b></b>
-
-                </footer>
-            </div>
-<div class="kalu"></div>
-
+    <footer>
+        <p class="barnd-name text-ubold" style="color:black;"> <b>Copyright ©  - Delhi e-Governance Society</b>&nbsp;<span id="copyright-year">2025</span></p>
+    </footer>
 </body>
-<script src="idea.js"></script>
 
 </html>
